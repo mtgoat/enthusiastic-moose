@@ -9,12 +9,15 @@ namespace EnthusiasticMoose
             Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
-            MooseSays();
+
+              // Let the moose speak!
+            MooseSays("H I, I'M E N T H U S I A S T I C! ");
+            MooseSays("Hi, I REALLY am enthusiastic!");
         }
 
-        static void MooseSays()
+        static void MooseSays(string message)
         {
-            Console.WriteLine(@"
+            Console.WriteLine($@"
                                        _.--^^^--,
                                     .'          `\
   .-^^^^^^-.                      .'              |
@@ -31,7 +34,7 @@ namespace EnthusiasticMoose
                '-'    | /       \ |
                       |  .-. .-.  |
                       \ / o| |o \ /
-                       |   / \   |    H I, I'M  E N T H U S I A S T I C !
+                       |   / \   |    {message}
                       / `^`   `^` \
                      /             \
                     | '._.'         \
@@ -47,3 +50,4 @@ namespace EnthusiasticMoose
 }
 //    NOTE: We add an @ in front of the string to allow for a multi-line string.
 //    NOTE: In C# we use the word "method" when referring to a function. We'll use the term method throughout the remainder of the exercise.
+// line 17 NOTE: We added the $ character to the front of the string to enable string interpolation.
