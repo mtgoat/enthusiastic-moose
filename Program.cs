@@ -15,8 +15,14 @@ namespace EnthusiasticMoose
             MooseSays("Hi, I REALLY am enthusiastic!");
 
             // As a question
-            bool isTrue = MooseAsks("Is Canada real?");
-            Console.WriteLine(isTrue);
+            bool isTrue = MooseAsks("Are Oceania, Eurosia, and Eastasia real?");
+            if (isTrue)
+            {
+                MooseSays("Really? It seems very unlikely.  Have you read 1984? ");
+            }
+            else{
+                MooseSays("I  K N E W  I T !!! ");
+            }
         }
 
         static void MooseSays(string message)
