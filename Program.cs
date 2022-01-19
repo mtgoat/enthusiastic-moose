@@ -50,4 +50,8 @@ namespace EnthusiasticMoose
 }
 //    NOTE: We add an @ in front of the string to allow for a multi-line string.
 //    NOTE: In C# we use the word "method" when referring to a function. We'll use the term method throughout the remainder of the exercise.
+//line 15 creating a method/function 
+//line 12 calling the function
 // line 17 NOTE: We added the $ character to the front of the string to enable string interpolation.
+
+
