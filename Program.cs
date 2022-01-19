@@ -15,6 +15,14 @@ namespace EnthusiasticMoose
             MooseSays("Hi, I REALLY am enthusiastic!");
 
             // As a question
+            GeorgeQuestion ();
+            EnthusiasticQuestion();
+            LoveCSharpQuestion();
+            SecretQuestion();
+        }
+        
+        static void GeorgeQuestion ()
+        {
             bool isTrue = MooseAsks("Are Oceania, Eurosia, and Eastasia real?");
             if (isTrue)
             {
@@ -25,6 +33,44 @@ namespace EnthusiasticMoose
             }
         }
 
+        static void EnthusiasticQuestion()
+{
+    bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
+    if (isEnthusiastic)
+    {
+        MooseSays("Yay!");
+    }
+    else
+    {
+        MooseSays("You should try it!");
+    }
+}
+
+static void LoveCSharpQuestion()
+{
+    bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
+    if (doesLoveCSharp)
+    {
+        MooseSays("Good job sucking up to your instructor!");
+    }
+    else
+    {
+        MooseSays("You will...oh, yes, you will...");
+    }
+}
+
+static void SecretQuestion()
+{
+    bool isEverythingFine = MooseAsks("Do you want to know a secret?");
+    if (isEverythingFine)
+    {
+        MooseSays("ME TOO!!!! I love secrets...tell me one!");
+    }
+    else
+    {
+        MooseSays("Oh, no...secrets are the best, I love to share them!");
+    }
+}
         static void MooseSays(string message)
         {
             Console.WriteLine($@"
